@@ -17,7 +17,7 @@ class DemoCourseSelectionPage(PageObject):
         """
         # This is the test course we are using for this test
         # This course/page won't be used for any tests
-        course_to_enroll = 'leadership-engineers-delftx-lfe101x-0'
+        course_to_enroll = 'demox-edx-demox-1'
 
         return "http://stage.edx.org/course/" + course_to_enroll
 
@@ -25,7 +25,7 @@ class DemoCourseSelectionPage(PageObject):
         """
         Checks if we are on the correct page
         """
-        return 'Leadership for Engineers' in self.q(
+        return 'DemoX' in self.q(
             css='.pull-left'
         ).text[0]
 
